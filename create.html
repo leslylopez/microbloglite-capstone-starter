@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap -->
@@ -19,7 +18,7 @@
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="./landing.css">
 
-    <title>Login to the Microblog Network!</title>
+    <title>Register to the Microblog Network</title>
 
     <!-- Run BEFORE page is finished loading (before window.onload - don't add the `defer` attribute): -->
     <script src="./auth.js"></script>
@@ -30,40 +29,42 @@
 
 <body>
 
-    <header>
-        <h1>Welcome to <code>YOUR MICROBLOG NETWORK</code></h1>
-    </header>
-
-    <main>
-
-        <form id="login">
+    <div>
+        <form id="registrationForm">
+            <h2>Register</h2>
             <div>
-                <label for="username">Username</label>
-                <input type="text" id="username" minlength="3">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
             </div>
-
             <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" minlength="6">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
             </div>
-
-            <button id="loginButton" type="submit">Login</button>
-
-            <!-- mt-3 -->
-            <div class="text-center">
-                <p>
-                    Don't have an account? <a href="create.html" class="btn btn-link">Create an Account</a>
-                </p>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
             </div>
-
+            <!-- <div>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div> -->
+            <button type="submit">Register</button>
         </form>
+    </div>
 
-    </main>
+    <div id="errorMessage"></div>
+
+    <div class="text-center">
+        <p>
+            <a href="index.html" class="btn btn-link">Log In</a>
+        </p>
+    </div>
 
     <footer></footer>
 
     <!-- Page-specific code -->
-    <script src="./landing.js"></script>
+    <script src="./create.js"></script>
+
 </body>
 
 </html>
