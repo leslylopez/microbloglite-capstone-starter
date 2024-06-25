@@ -25,7 +25,7 @@
     <!-- Run BEFORE page is finished loading (before window.onload): -->
     <script src="../auth.js"></script>
     <script>
-        if (isLoggedIn() === false) window.location.replace("/");
+        if ((isLoggedIn) === false) window.location.replace("/");
     </script>
 </head>
 
@@ -45,7 +45,7 @@
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         <a class="nav-link" href="profile.html">Profile</a>
-                        <a class="btn btn-outline-dark" href="logout.html" role="button">Log Out</a>
+                        <a class="btn btn-outline-dark" role="button" id="logoutButton">Log Out</a>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,11 @@
         <h1>POSTS PAGE</h1>
     </header>
 
-    <main></main>
+    <main>
+        <div class="card-container">
+            <div id="postList"></div>
+        </div>
+    </main>
 
     <footer></footer>
 
