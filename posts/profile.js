@@ -2,6 +2,7 @@
 
 window.onload = () => {
 
+
     const createPostForm = document.querySelector("#addCommentForm");
 
     const logoutButton = document.getElementById("logoutButton");
@@ -10,7 +11,16 @@ window.onload = () => {
 
     logoutButton.addEventListener("click", logout)
 
+    displayWelcomeMessage();
 
+
+}
+const displayWelcomeMessage = () => {
+    const loginData = getLoginData();
+    const welcomeMessageElement = document.getElementById("welcomeMessage");
+    if (loginData && loginData.username) {
+        welcomeMessageElement.textContent = `Welcome, ${loginData.username}!`;
+    }
 }
 
 const createPost = async (event) => {
@@ -43,9 +53,21 @@ const createPost = async (event) => {
 
         console.log(newComment, "new comment created")
 
+        let commentMessage = document.getElementById("commentAddedMessage");
+
+        if (response.ok) {
+            commentMessage.textContent = "Comment added successfully!";
+        } else {
+            const error = await response.json();
+            commentMessage.textContent = error.message;
+        }
+
+
+
     } catch (err) {
 
         console.log("oops")
     }
 
 }
+

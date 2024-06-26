@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../global.css">
 
     <!-- Page-specific CSS -->
-    <link rel="stylesheet" href="./posts.css">
+    <link rel="stylesheet" href="./profile.css">
 
     <title>/POSTS</title>
 
@@ -41,7 +41,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Posts</a>
                         <a class="nav-link" href="index.html">Posts</a>
                         <a class="btn btn-outline-dark" role="button" id="logoutButton">Log Out</a>
                     </div>
@@ -50,7 +51,7 @@
         </nav>
     </header>
 
-    <h1>Welcome User!</h1>
+    <div id="welcomeMessage"></div>
 
     <!-- Content area -->
     <form id="addCommentForm" class="form-inline">
@@ -62,6 +63,8 @@
         <button type="submit" class="btn-outline-dark">Post</button>
 
     </form>
+
+    <div id="commentAddedMessage"></div>
 
     <footer></footer>
 
