@@ -10,9 +10,21 @@
        clearly! (Remove this outline before submitting: users won't 
        want to see it!)
     */
-    /* outline: 1px dotted red; */
+     /* outline: 1px dotted red; */
 }
 
 :root {
     font-size: 1rem;
+}
+
+body {
+    /* rgb(174, 235, 174) , rgb(166, 217, 217) */
+    background: linear-gradient(to right, #ef4136, #fbb040);
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:500;
+
 }

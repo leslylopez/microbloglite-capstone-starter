@@ -1,6 +1,4 @@
-/* Posts Page CSS */
-
-/* Global CSS for all pages */
+/* Registration CSS */
 
 * {
     /* Sizing helper: See Workbook 1b, page 2-33. */
@@ -19,9 +17,8 @@
     font-size: 1rem;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
 
-    color: black;
+    color: white;
 
 }

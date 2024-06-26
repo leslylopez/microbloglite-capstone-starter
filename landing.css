@@ -1,1 +1,73 @@
-/* Landing Page CSS */
+/* Login Page CSS */
+/* Global CSS for all pages */
+
+* {
+    /* Sizing helper: See Workbook 1b, page 2-33. */
+    box-sizing: border-box;
+
+    /* 
+       Vizualization helper: While styling or debugging your HTML & CSS, 
+       uncomment the rule below to see all the boxes on your page more
+       clearly! (Remove this outline before submitting: users won't 
+       want to see it!)
+    */
+    /* outline: 1px dotted red;   */
+}
+
+:root {
+    font-size: 1rem;
+}
+
+
+form {
+
+    margin: auto;
+    max-width: 500px;
+    /* add this line to set a maximum width */
+    padding: 20px;
+    /* add this line to add some padding around the form */
+    background-color: #f7dcc6;
+    /* add this line to set a background color */
+    border: 1px solid #ccc;
+    /* add this line to add a border */
+    border-radius: 10px;
+    /* add this line to add a rounded corner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+h1 {
+    color: rgb(26, 77, 26);
+
+}
+
+#login>* {
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+#login {
+    display: grid;
+    grid-gap: 10px;
+    max-width: 100%;
+
+}
+
+#login .text-center {
+    grid-column: 1;
+    text-align: center;
+}
