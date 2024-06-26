@@ -33,15 +33,15 @@
     <main>
 
         <form id="login">
-            <h1>Welcome to Connectify!</h1>
+            <h1 style="font-size: xx-large;">Welcome to Connectify!</h1>
             <div>
-                <label for="username">Username</label>
-                <input type="text" id="username" minlength="3">
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" id="username" minlength="3" required class="form-input">
             </div>
 
             <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" minlength="6">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" id="password" minlength="6" required class="form-input">
             </div>
 
             <button id="loginButton" type="submit" class="btn btn-outline-dark">Login</button>

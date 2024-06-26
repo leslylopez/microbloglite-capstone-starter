@@ -42,12 +42,13 @@ h1 {
 }
 
 #login>* {
-    color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
 }
 
 h1 {
     text-align: center;
+    color: black;
 }
 
 
@@ -71,3 +72,16 @@ main {
     grid-column: 1;
     text-align: center;
 }
+
+.form-label {
+    display: inline-block;
+    width: 100px; /* adjust the width to your liking */
+    text-align: right;
+  }
+  
+  .form-input {
+    width: 300px; /* adjust the width to your liking */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

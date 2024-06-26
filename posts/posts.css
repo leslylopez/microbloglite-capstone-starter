@@ -12,7 +12,7 @@
        clearly! (Remove this outline before submitting: users won't 
        want to see it!)
     */
-     outline: 1px dotted red;
+     /* outline: 1px dotted red; */
 }
 
 :root {
@@ -23,5 +23,31 @@
 h1, h2, h3, h4, h5, h6 {
 
     color: black;
+    text-align: center;
 
 }
+
+.card-container {
+    max-width: 800px; /* set a maximum width for the card container */
+    margin: 40px auto; /* add some margin and center the container */
+    display: flex; /* make the container a flex container */
+    flex-wrap: wrap; /* allow the cards to wrap to a new line */
+    justify-content: center; /* center the cards horizontally */
+  }
+  
+  #postList {
+    display: flex; /* make the post list a flex container */
+    flex-direction: column; /* stack the cards vertically */
+    gap: 20px; /* add some gap between the cards */
+  }
+  
+  .card {
+    /* add some basic card styles */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px; /* set a fixed width for the cards */
+    margin: 10px; /* add some margin around the cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add some subtle shadow */
+  }

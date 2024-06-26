@@ -10,15 +10,84 @@
        clearly! (Remove this outline before submitting: users won't 
        want to see it!)
     */
-     outline: 1px dotted red;
+    /* outline: 1px dotted red;  */
 }
 
 :root {
     font-size: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-
-    color: white;
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(0, 0, 0);
 }
+
+form {
+    margin: auto;
+    max-width: 500px;
+    /* add this line to set a maximum width */
+    padding: 20px;
+    /* add this line to add some padding around the form */
+    background-color: #f7dcc6;
+    /* add this line to set a background color */
+    border: 1px solid #ccc;
+    /* add this line to add a border */
+    border-radius: 10px;
+    /* add this line to add a rounded corner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pull-right {
+    float: right;
+}
+
+#registrationForm {
+    display: grid;
+    grid-gap: 10px;
+    max-width: 100%;
+}
+
+
+#registrationForm >* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+.form-label {
+    display: inline-block;
+    width: 150px; /* adjust the width to your liking */
+    text-align: center;
+  }
+  
+  .form-input {
+    width: 300px; /* adjust the width to your liking */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  h2 {
+
+    text-align: center;
+
+  }
+
+  #errorMessage {
+    margin-top: 0; /* prevent the error message from adding extra margin */
+    padding: 0; /* prevent the error message from adding extra padding */
+    overflow: hidden; /* prevent the error message from overflowing the container */
+    text-overflow: ellipsis; /* truncate the error message if it's too long */
+    white-space: nowrap; /* prevent the error message from wrapping to a new line */
+  }
