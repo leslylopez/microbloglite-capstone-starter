@@ -51,20 +51,20 @@
         </nav>
     </header>
 
-    <div id="welcomeMessage"></div>
 
-    <!-- Content area -->
-    <form id="addCommentForm" class="form-inline">
-
-        <div class="form-group">
-            <input type="text" name="text" id="comment" class="form-control" placeholder="Share what's on your mind...">
-        </div>
-
-        <button type="submit" class="btn-outline-dark">Post</button>
-
-    </form>
-
-    <div id="commentAddedMessage"></div>
+    <main>
+        <div id="welcomeMessage" style="text-align: center;"></div>
+        <!-- Content area -->
+        <form id="addCommentForm">
+            <div class="form-group">
+                <textarea id="comment" name="text" class="form-control" placeholder="Share what's on your mind..."
+                    spellcheck="true" autocorrect="on"></textarea>
+                <button type="submit" class="btn btn-outline-dark"
+                    style="margin-left: 88%; margin-top: 10px;">Post</button>
+                <div id="commentAddedMessage"></div>
+            </div>
+        </form>
+    </main>
 
     <footer></footer>
 

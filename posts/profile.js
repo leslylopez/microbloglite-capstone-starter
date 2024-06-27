@@ -61,9 +61,6 @@ const createPost = async (event) => {
             const error = await response.json();
             commentMessage.textContent = error.message;
         }
-
-
-
     } catch (err) {
 
         console.log("oops")

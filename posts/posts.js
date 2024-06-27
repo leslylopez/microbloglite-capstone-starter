@@ -10,7 +10,7 @@ window.onload = () => {
 
     logoutButton.addEventListener("click", logout)
 
-}
+};
 
 const getPosts = () => {
 
@@ -38,5 +38,6 @@ const getPosts = () => {
             `;
                 postList.innerHTML += cardHTML;
             });
+
         });
-}
+};

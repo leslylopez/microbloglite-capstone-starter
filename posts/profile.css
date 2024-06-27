@@ -10,15 +10,56 @@
        clearly! (Remove this outline before submitting: users won't 
        want to see it!)
     */
-     outline: 1px dotted red;
+    /* outline: 1px dotted red; */
 }
 
 :root {
     font-size: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 
     color: black;
 
+}
+
+ /* main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    /*to center vertically */
+    /* margin: 0 auto; */
+    /*to center horizontally */
+ /* }  */ 
+
+#welcomeMessage {
+
+    font-size: x-large;
+
+} 
+
+  #comment {
+    display: flex;
+    height: 250px;
+    width: 30;
+} 
+
+form {
+    margin: 40px auto;
+    max-width: 500px;
+    /* add this line to set a maximum width */
+    padding: 20px;
+    /* add this line to add some padding around the form */
+    background-color: #f7dcc6;
+    /* add this line to set a background color */
+    border: 1px solid #ccc;
+    /* add this line to add a border */
+    border-radius: 10px;
+    /* add this line to add a rounded corner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
