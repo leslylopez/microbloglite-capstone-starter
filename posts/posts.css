@@ -43,11 +43,17 @@ h1, h2, h3, h4, h5, h6 {
   
   .card {
     /* add some basic card styles */
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border: 1px solid  #ccc;
     border-radius: 10px;
     padding: 20px;
     width: 500px; /* set a fixed width for the cards */
     margin: 10px; /* add some margin around the cards */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add some subtle shadow */
   }
+
+
+body {
+    /* rgb(174, 235, 174) , rgb(166, 217, 217) */
+    background: linear-gradient(to right, #d03c1b, #4081fb, #d03c1b);
+}

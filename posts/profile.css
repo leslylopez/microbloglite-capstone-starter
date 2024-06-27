@@ -55,7 +55,7 @@ form {
     /* add this line to set a maximum width */
     padding: 20px;
     /* add this line to add some padding around the form */
-    background-color: #f7dcc6;
+    background-color: rgb(218, 224, 244);
     /* add this line to set a background color */
     border: 1px solid #ccc;
     /* add this line to add a border */
@@ -63,3 +63,9 @@ form {
     /* add this line to add a rounded corner */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+body {
+    /* rgb(174, 235, 174) , rgb(166, 217, 217) */
+    background: linear-gradient(to right, #d03c1b, #4081fb);
+}
+
