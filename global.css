@@ -1,16 +1,7 @@
 /* Global CSS for all pages */
 
 * {
-    /* Sizing helper: See Workbook 1b, page 2-33. */
     box-sizing: border-box;
-
-    /* 
-       Vizualization helper: While styling or debugging your HTML & CSS, 
-       uncomment the rule below to see all the boxes on your page more
-       clearly! (Remove this outline before submitting: users won't 
-       want to see it!)
-    */
-     /* outline: 1px dotted red; */
 }
 
 :root {
@@ -18,13 +9,17 @@
 }
 
 body {
-    /* rgb(174, 235, 174) , rgb(166, 217, 217) */
     background: linear-gradient(to right, #ef4136, #fbb040);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 
     font-family: 'Courier New', Courier, monospace;
-    font-weight:500;
+    font-weight: 500;
 
 }

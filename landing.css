@@ -1,17 +1,6 @@
-/* Login Page CSS */
-/* Global CSS for all pages */
-
 * {
-    /* Sizing helper: See Workbook 1b, page 2-33. */
-    box-sizing: border-box;
 
-    /* 
-       Vizualization helper: While styling or debugging your HTML & CSS, 
-       uncomment the rule below to see all the boxes on your page more
-       clearly! (Remove this outline before submitting: users won't 
-       want to see it!)
-    */
-    /* outline: 1px dotted red;   */
+    box-sizing: border-box;
 }
 
 :root {
@@ -20,25 +9,17 @@
 
 
 form {
-
     margin: auto;
     max-width: 500px;
-    /* add this line to set a maximum width */
     padding: 20px;
-    /* add this line to add some padding around the form */
     background-color: #f7dcc6;
-    /* add this line to set a background color */
     border: 1px solid #ccc;
-    /* add this line to add a border */
     border-radius: 10px;
-    /* add this line to add a rounded corner */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
 }
 
 h1 {
     color: rgb(26, 77, 26);
-
 }
 
 #login>* {
@@ -50,7 +31,6 @@ h1 {
     text-align: center;
     color: black;
 }
-
 
 main {
     display: flex;
@@ -75,13 +55,13 @@ main {
 
 .form-label {
     display: inline-block;
-    width: 100px; /* adjust the width to your liking */
+    width: 100px;
     text-align: right;
-  }
-  
-  .form-input {
-    width: 300px; /* adjust the width to your liking */
+}
+
+.form-input {
+    width: 300px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
+}

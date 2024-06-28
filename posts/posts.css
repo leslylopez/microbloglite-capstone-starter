@@ -1,24 +1,11 @@
-/* Posts Page CSS */
-
-/* Global CSS for all pages */
 
 * {
-    /* Sizing helper: See Workbook 1b, page 2-33. */
     box-sizing: border-box;
-
-    /* 
-       Vizualization helper: While styling or debugging your HTML & CSS, 
-       uncomment the rule below to see all the boxes on your page more
-       clearly! (Remove this outline before submitting: users won't 
-       want to see it!)
-    */
-     /* outline: 1px dotted red; */
 }
 
 :root {
     font-size: 1rem;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
 
@@ -28,32 +15,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-container {
-    max-width: 800px; /* set a maximum width for the card container */
-    margin: 40px auto; /* add some margin and center the container */
-    display: flex; /* make the container a flex container */
-    flex-wrap: wrap; /* allow the cards to wrap to a new line */
-    justify-content: center; /* center the cards horizontally */
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   #postList {
-    display: flex; /* make the post list a flex container */
-    flex-direction: column; /* stack the cards vertically */
-    gap: 20px; /* add some gap between the cards */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   
   .card {
-    /* add some basic card styles */
     background-color: #ffffff;
     border: 1px solid  #ccc;
     border-radius: 10px;
     padding: 20px;
-    width: 500px; /* set a fixed width for the cards */
-    margin: 10px; /* add some margin around the cards */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add some subtle shadow */
+    width: 500px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-
 body {
-    /* rgb(174, 235, 174) , rgb(166, 217, 217) */
     background: linear-gradient(to right, #d03c1b, #4081fb, #d03c1b);
 }
